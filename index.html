@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Tiaan's Web Design Portfolio</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <!-- INTRO -->
+     <div class="loading-columns fade-out">
+        <div class="loading-column1"></div>
+        <div class="loading-column2"></div>
+        <div class="loading-column3"></div>
+     </div>
+
+    <!-- NAVBAR -->
+    <nav class="fade-in">
+        <div class="left">
+            <a href="/portfolio">Tiaan de Beer</a>
+        </div>
+            
+        <div class="right">
+            <a href="https://github.com/tiaandebeer2004" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-github"></i>
+                <span>GitHub</span>
+            </a>
+
+            <a href="https://www.linkedin.com/in/tiaan-de-beer-6a428929a/" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-linkedin"></i>
+                <span>LinkedIn</span>
+            </a>
+        </div>
+    </nav>
+
+    <main class="fade-in">
+        <!-- SECTION 1: HERO -->
+        <section class="hero-section">
+            <div class="text">
+                <h2>Hi! I'm Tiaan 👋🏻</h2>
+                <p>I'm a web developer with a passion for design. I do my best to create things with ❤️.</p>
+
+                <p class="inline">I'm also a </p>
+
+                <span id="rotate"></span>
+
+                <div class="navigation-links">
+                    <a href="#skills">
+                        <i class="fa-solid fa-code"></i>
+                        <span>Skills</span>
+                    </a>
+
+                    <a href="#projects">
+                        <i class="fa-solid fa-list-check"></i>
+                        <span>Projects</span>
+                    </a>
+
+                    <a href="#contact">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>Contact</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="photo">
+                <img src="images/hero-photo.webp" alt="photo of tiaan de beer" class="hero-img">
+            </div>
+        </section>
+
+        <!-- SECTION 2: SKILLS -->
+        <section id="skills" class="skills-section">
+            <h2>Skills</h2>
+            <div class="text">
+                <p>I've had a lot of fun experimenting with different kinds of web development and have gained many valuable skills over the years. I enjoy trying out new languages, frameworks and website builders and I am always interested in learning new things.</p>
+                <p>The skills I am most proficient in include but are not limited to:</p>
+            </div>
+
+            <div class="skill-cells">
+                <div class="skill-cell">
+                    <i class="fa-brands fa-html5"></i>
+                    <span>&#160HTML</span>
+                </div>
+            
+                <div class="skill-cell">
+                    <i class="fa-brands fa-css3"></i>
+                    <span>&#160CSS</span>
+                </div>
+         
+                <div class="skill-cell">
+                    <i class="fa-brands fa-js"></i>
+                    <span>&#160JavaScript</span>
+                </div>
+            
+                <div class="skill-cell">
+                    <i class="fa-brands fa-wordpress"></i>
+                    <span>&#160WordPress</span>
+                </div>
+       
+                <div class="skill-cell">
+                    <i class="fa-brands fa-figma"></i>
+                    <span>&#160Figma</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 3: PROJECTS -->
+        <section id="projects" class="projects-section">
+            <h2>Projects</h2>
+
+            <section class="cards-wrapper">
+                <div class="card-grid-space">
+                    <a class="card" href="/portfolio/project-davida.html">
+                        <div>
+                            <img src="images/project-davida-coffee-co.webp" alt="davida coffee co website">
+
+                            <h1>daVida Coffee Co</h1>
+                            <p>A website for a coffee roastery.<br>-Professional project for a client.</p>
+                            <div class="tags">
+                                <div class="tag">WordPress</div>
+                                <div class="tag">HTML</div>
+                                <div class="tag">CSS</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="card-grid-space">
+                    <a class="card" href="/portfolio/project-this_portfolio.html">
+                        <div>
+                            <img src="images/project-this-portfolio.webp" alt="this portfolio website">
+
+                            <h1>This Portfolio</h1>
+                            <p>My portfolio website.<br>-Personal project</p>
+                            <div class="tags">
+                                <div class="tag">HTML</div>
+                                <div class="tag">CSS</div>
+                                <div class="tag">JavaScript</div>
+                                <div class="tag">jQuery</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="card-grid-space">
+                    <a class="card" href="/portfolio/project-cosy_closet.html">
+                        <div>
+                            <img src="images/project-cosy-closet.webp" alt="cosy closet">
+
+                            <h1>Cosy Closet</h1>
+                            <p>An ecommerce store<br>-Professional project for a client</p>
+                            <div class="tags">
+                                <div class="tag">WordPress</div>
+                                <div class="tag">WooCommerce</div>
+                                <div class="tag">Elementor</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </section>
+        </section>
+
+        <!-- SECTION 5: CONTACT -->
+        <section id="contact" class="contact-section">
+            <h2>Contact</h2>
+            
+            <p>tiaandebeer@gmail.com<br>065 946 2507</p>
+        </section>
+    </main>
+</body>
+</html>
